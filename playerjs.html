@@ -21,21 +21,24 @@
     </style>
         
     <div id="playerjs" style="width:100%;height:100%;"></div>
-        
+    
+
+    <script type="text/javascript">
+    
+    hlsconfig: {
+    p2pConfig:  {
+    live: false,
+      }
+    }
+    
+    </script>
+    
     <script type="text/javascript">
             
         var ps = location.href.substr(location.href.indexOf("html?")+5).split("&");
             
         var vs = {
-        id:"playerjs",
-        
-        hlsconfig: {
-        p2pConfig:  {
-        live: false,
-          }
-         }
-        
-        
+        id:"playerjs"
         };
             
         for(var i = 0; i<ps.length; i++){
